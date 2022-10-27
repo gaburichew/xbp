@@ -35,4 +35,4 @@ elif selecta==2:
         elif selectc==2:
             print("大富豪の友達に掛ける")
             print("プライベートジェット機をすぐに飛ばしてくれて、大学の屋上に停め、救助に成功!無事脱出可能となる。"
-                  "Fin ")
+                  "GAME CLEAR.Fin. ")
