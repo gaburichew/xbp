@@ -11,10 +11,10 @@ print("とりあえず脱出しないと!　どうしようか、と周りを見
 selecta=int(input("制限かかる前にどれを選ぶ？1~3の中から選べ!"))
 if selecta==1:
     print("doyo.free")
-    print("道用先生は独身ではなく既婚者らしい")
+    print("道用先生は独身ではなく既婚者らしい。1階で起きていた火事に巻き込まれ死。GAME OVER.")
 elif selecta==3:
     print("doyo.tokyo")
-    print("道用先生は富山県出身らしい")
+    print("道用先生は富山県出身らしい。1階で起きていた火事に巻き込まれ死。GAME OVER.")
 elif selecta==2:
     print("doyo.46")
     print("開けた!　46歳らしいな。毎年パスワードの数値変えてるのかなぁ？")
@@ -22,7 +22,7 @@ elif selecta==2:
     selectb=int(input("どうする？1,2の二択から選べ"))
     if selectb ==1:
         print("下に行く")
-        print("火事に巻き込まれて死。")
+        print("火事に巻き込まれて死。GAME OVER.")
     elif selectb==2:
         print("火事に巻き込まれないように上へ行く")
         print("とりあえず火事から逃れることには成功した")
@@ -31,7 +31,7 @@ elif selecta==2:
         selectc=int(input("どこに連絡をかける？1,2の二択から選べ"))
         if selectc==1:
             print("消防署に掛ける")
-            print("しかし消火作業を優先的に行い助けようとした消防署は火の増す勢いに立ち向かえず、救助が間に合わず、死。")
+            print("しかし消火作業を優先的に行い助けようとした消防署は火の増す勢いに立ち向かえず、救助が間に合わず、死。GAME OVER.")
         elif selectc==2:
             print("大富豪の友達に掛ける")
             print("プライベートジェット機をすぐに飛ばしてくれて、大学の屋上に停め、救助に成功!無事脱出可能となる。"
