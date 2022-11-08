@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <!-- ⑥↓タイトルを変えてみよう -->
+    <title>生生星のページ</title>
+    <!-- ⑤スタイルシートの設定をしよう -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- h1.htmlからある行をコピペしてくればOK -->
+</head>
+<body>
+    <h1>プログラミングでできること</h1>
+    <!-- 塊ごとにdivタグで区切るようにしましょう。 -->
+    <div><br>
+        <br>
+        私たちの班では、皆が抱えている問題である「朝起きられない」「授業中に眠くなる」「授業後になぜか目が覚める」という眠気という大きな悩みをプログラミングで対処することを考えた。<br>
+        <br><br><br>
+        そして考えたプログラムは以下である。<br><br><br>
+
+        <code>
+            <ol style="list-style:decimal-leading-zero outside;in-left:0;padding-left:36px;margin:0;background-color:#F7F7F7;color:#000;">
+                          <li>import schedule</li>
+                          <li>import time</li>
+                          <li></li>
+                          <li>#時間設定</li>
+                          <li>print(<font style="color:brown;">"スリープBGMを再生する時間を指定してください"</font>)</li>
+                          <li>hour = input(<font style="color:brown;">"時間（hour）:"</font>)</li>
+                          <li>minute = input(<font style="color:brown;">"分（minute）:"</font>)</li>
+                          <li>target = f<font style="color:brown;">"{hour.zfill(2)}:{minute.zfill(2)}"</font></li>
+                          <li>print(target+<font style="color:brown;">"に再生時間を設定しました"</font>)</li>
+                          <li></li>
+                          <li>#再生したい動画を指定</li>
+                          <li>print(<font style="color:brown;">"再生したいスリープBGMのURLを貼ってください"</font>)</li>
+                          <li>movie = input(<font style="color:brown;">"URL :"</font>)</li>
+                          <li>print(target+<font style="color:brown;">"に指定したBGMを再生します"</font>)</li>
+                          <li></li>
+                          <li>#defは「定義」ということ</li>
+                          <li>def job():</li>
+                          <li>&nbsp;&nbsp;&nbsp;&nbsp;import webbrowser</li>
+                          <li>&nbsp;&nbsp;&nbsp;&nbsp;webbrowser.open(movie)</li>
+                          <li></li>
+                          <li>schedule.every().day.at(target).do(job)</li>
+                          <li></li>
+                          <li>#時間待ち</li>
+                          <li>while True:</li>
+                          <li>&nbsp;&nbsp;schedule.run_pending()</li>
+                          <li>&nbsp;&nbsp;time.sleep(60)</li>
+                          </ol></code>
+<br><br>このプログラムで、自分で設定した時間に指定した動画を流すことが可能になる。
+<br>聞くと眠くなる動画を、この時間に睡眠をとり始めると翌日健康な暮らしを送れると思われる時間に設定することで、<br>
+強制的な眠気を呼び起こし、生活習慣の改善と授業中に起こる睡魔への対策につながると考えられる。<br>
+<br><br><br><br>
+実行すると下記のようになる。<br><br>
+<img src="./img_14.png" alt="70%"><br>
+<br><br>
+実際に時間になると動画が再生される。
+<br><br>
+<h3>参考サイト</h3>
+                <ul>
+                <li><a href="https://qiita.com/Rxxx/items/d1f7d9a08dacf693b0a9" target="_blank">Pyson3で目覚ましを作る(外部サイト)</a></li>
+                <li><a href="https://magazine.techacademy.jp/magazine/20872" target="_blank">Pythonの関数を指定時刻に実行する方法を現役エンジニアが解説【初心者向け】(外部サイト)</a></li>
+                <li><a href="https://qiita.com/RShirakawa/items/5dd474ce4aed141a0b56" target="_blank">Pythonでyoutubeを再生する(外部サイト)</a></li>
+                <li><a href="https://teratail.com/questions/358689" target="_blank">python,VScodeで指定された時間にyoutubeの動画を自動再生したい。(外部サイト)</a></li>
+                </ul>
+<br>
+<br><br><br><br>
+※これは同じ班員のサカグチさんのを共有させていただいたものです。<br>
+<a href="https://moeno39.github.io/xbp/de12/5.html"></a>
+<br>
+
+    </div>
+
+</body>
+</html>
