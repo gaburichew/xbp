@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../OneDrive/画像"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "画像"
+	}
+}
