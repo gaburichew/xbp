@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://mikumo16.github.io/xbp/de34/6.html -->
+<html lang="jp"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>ミクモ　projectnote</title>
+    
+    <link rel="stylesheet" href="./ミクモ　projectnote_files/style.css">
+    <link href="./ミクモ　projectnote_files/all.css" rel="stylesheet">
+    
+</head>
+<body>
+    <h1>プロジェクトノート</h1>
+
+    <h3>アイディアスケッチ</h3>       
+        <img src="./ミクモ　projectnote_files/mahou_ideasketch.jpg" width="40%">
+
+    <h3>概要</h3>
+        <div>
+            魔法を使えるようになりたいので、光を当てると魔法みたいなエフェクト的なアニメーションが流れる仕組みの何か。<br>
+            アニメーション内に出てきたQRコードを読み取るととあるオブジェが光ります。すごい！
+        </div>
+
+    <h3>プロセスメモ</h3>
+        <div>
+         <div>
+           ■光センサーの値によって魔法みたいな映像を流す<br>
+           →<mark>Processing</mark>を使う
+           <div>
+            ■Processingコーディング<br>
+                <ol>
+                    <li>■光センサーでProcessingを動かす<br>
+                        →(参照) <a href="https://fabble.cc/fablabminatomirai/arduino-processing" target="_blank">ArduinoとProcessingを繋げる</a><br><br>
+                        ■センサーの値によってアニメーションが再生されるようにするには?
+                    </li>
+                    <li>
+                        ■魔法みたいなアニメーションをProcessingで作る<br>
+                        ●いい感じのコピペ元探す(氷魔法をイメージ)<br>
+                        →(参照)<a href="http://blog.livedoor.jp/reona396/archives/55010192.html" target="_blank">Processingでキラキラ図形を描く</a><br>
+                        →色を寒色系に変更し氷魔法感を出す<br><br>
+
+                    </li>
+                    <li>
+                        ■アニメーション内にQRコードを流す<br>
+                        ●Processingで画像を出す方法<br>
+                        →(参照)<a href="http://jkoba.net/prototyping/processing/basic_image_practice.html" target="_blank">画像が動き回る仕組み</a><br>
+                        →実際にQRコードを動かせた! <br><br>
+
+                    </li>
+                    <li>
+                        ■1から2,3を繋げる<br>
+                        →先生のおかげもあり繋がった！
+                    </li>
+                </ol>
+                <div>
+                    ■アニメーションが流れると同時に効果音を流す<br>
+                    ●Processingで音を流す方法を調べる<br>
+                    →(参照)<a href="https://konsuki.com/4443/" target="_blank">Processingで音を出す方法</a><br>
+                    →アニメーションのコードに追加する<br>
+                    ●アニメーションと同時には流れるが、音が連発されてしまう…<br>
+                    →先生が新しくif関数を足してくれて解決！ありがとうございます<br>
+                    <br>
+                    →使用した効果音<br>
+                    →<a href="https://www.springin.org/sound-stock/subcategory/magic/" target="_blank">Springin</a>というサイトのフリー音源「魔法詠唱3」<br>
+
+                </div>
+                <div class="box51" style="text-align: center;">
+                    <strong>
+                        完成したArduinoとProcessingのソースコードはこちら↓
+                    </strong><br><br>
+                    　　<a href="https://mikumo16.github.io/xbp/de34/code1.html" target="_blank" class="btn-animation-02"><span>ソースコード</span></a><br>
+                </div>
+                             
+           </div>
+           <div>
+            ■デジファブ使って杖型のライト作り<br>
+            →3Dプリンターで杖の形作り<br>
+            ●LED買う<br>
+            →買った<br>
+            ●アクリル絵の具で茶色に塗ってそれっぽくする<br>
+            →完成！<br>
+            <p><img src="./ミクモ　projectnote_files/tsue.jpg" width="30%"></p>
+
+           </div>
+         </div>
+         <div>
+            ■映像内に出現したQRコードを読みとると雪だるまオブジェが光るシステムを作る
+            <div>
+                ■QRコードとLEDのプログラミング<br>
+                ●授業でも行った<a href="https://qiita.com/doyodoyo/private/e42087e7f7f99a7dfe60" target="_blank">dfLinkを使った遠隔システム</a>作る<br>
+                →dfLinkのQRコードを上記のProcessingの画像に設定
+            </div>
+            <div>
+                ■雪だるまづくり⛄<br>
+                ●3Dプリンターで作る、LEDを中に入れるといい感じに光るようにする<br>
+                →1つ目(思ったように光らなかったので作り直す)<br>
+                <p><img src="./ミクモ　projectnote_files/yukidaruma1.jpg" width="30%"><br></p>
+                →完成品(アクリル絵の具で色付け)<br>
+                <p><img src="./ミクモ　projectnote_files/yukidaruma2.jpg" width="30%"></p>
+            </div>
+           
+         </div>
+         <div>
+            ■スクリーンに映すには配線が短いので長くする<br>
+            →はんだをつかって長くした<br>
+            <div>
+            <img src="./ミクモ　projectnote_files/handa.jpg" width="30%"><br>
+            </div>
+        </div>
+
+    <h3>使用したもの</h3>
+        <div>
+            <ul>
+                <li>Arduino</li>
+                <li>DfLink</li>
+                <li>Processing</li>
+                <li>cdsセル(光センサ)</li>
+                <li>発行ダイオード</li>
+                <li>アクリル絵の具</li>
+                <li>LED(楽天で購入)</li>
+            </ul>
+        </div>
+
+    <h3>紹介動画</h3>
+        <div>
+            <iframe width="560" height="315" src="./ミクモ　projectnote_files/YrwOtoNAnqk.html" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+        </div>
+        
+    <p><a href="https://mikumo16.github.io/xbp/de34/index.html">前のページに戻る</a></p>
+    
+
+</div></body></html>
